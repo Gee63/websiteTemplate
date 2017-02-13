@@ -1,0 +1,34 @@
+[
+  {
+    "perk": "perk1",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk2",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk3",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk4",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk5",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk6",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk7",
+    "description": "describe the value to me !"
+  },
+  {
+    "perk": "perk8",
+    "description": "describe the value to me !"
+  }
+]

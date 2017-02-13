@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>FireShell by @toddmotto</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="../assets/css/style.min.css" rel="stylesheet">
+  <script src="../assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="header">
+  <a class="_logo" href="/">Osiris trading logo</a>
+
+
+  <a href="/culture/">culture</a>
+  <a href="/careers/">careers</a>
+  <a href="/contact/">contact</a>
+</div>
+
+
+<div id="contact-container">
+  <div class="col-2 details">
+    <h1>contact us</h1>
+    <ul>
+      <li>physical address</li>
+      <li>email address</li>
+      <li>telephone</li>
+      <li>etc</li>
+    </ul>
+  </div>
+  <div class="col-2 map">
+    <div id="map"></div>
+
+  </div>
+</div>
+
+
+<script src="../assets/js/vendor/jquery-1.10.2.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="../assets/js/vendor/jets.min.js"></script>
+<script src="../assets/js/scripts.min.js"></script>
+
+<script>
+  /*google maps script*/
+  function initMap() {
+
+    var osirisLatLng = {lat: -26.133345, lng: 28.068373};
+
+
+    /*mustr be in same order as myLatLngs*/
+    var infoWindowContent = [
+      '<div class="content"> here is some content about osiris</div>',
+      '<div class="content"> here is some content about churchills</div>',
+      '<div class="content"> here is some content about @Home</div>'
+    ];
+
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 18,
+      center: osirisLatLng
+    });
+
+
+    var infoWindows = [];
+    var markersArray = [];
+
+    function addMarker(myLatLng, i) {
+
+      markersArray.push([i]);
+
+      markersArray[i] = new google.maps.Marker({
+        position: myLatLng.position,
+        map: map
+      });
+
+      var infowindow = infoWindows.push(new google.maps.InfoWindow({
+        content: infoWindowContent[i]
+      }));
+
+      markersArray[i].addListener('click', function () {
+        infoWindows[i].open(map, markersArray[i]);
+      });
+
+
+    }
+
+
+    /*must be in same order as infoWindowContent*/
+    var myLatLngs = [
+        {position: new google.maps.LatLng(-26.133345, 28.068373), place: 'Osiris'},
+        {position: new google.maps.LatLng(-26.133301, 28.068770), place: 'ChurchHills'},
+        {position: new google.maps.LatLng(-26.132880, 28.068363), place: '@Home'}
+      ]
+      ;
+
+    for (var i = 0, myLatLng; myLatLng = myLatLngs[i]; i++) {
+      addMarker(myLatLng, i);
+
+    }
+
+
+  }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0lklbw6V_oqyzlzWCQaL4dg7GZBYoF6k&callback=initMap">
+</script>
+
+</body>
+</html>
