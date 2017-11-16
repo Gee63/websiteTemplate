@@ -494,6 +494,11 @@ html, body {
   }
 }
 
+/*loader*/
+.loading{
+  display: block;
+}
+
 .slick-prev:before, .slick-next:before {
   color: #000 !important;
 }

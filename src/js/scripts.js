@@ -82,22 +82,58 @@
 
     }
 
+
     /*pull in available jobs for filtering*/
     if ($('#vacancies-container').length) {
-      $.getJSON('../api/jobs.json', function (json) {
+      /*$.getJSON('../api/jobs.json', function (json) {
 
-        /*loop through the arrays objects*/
-        for (var i = 0; i < json.length; i++) {
+       /!*loop through the arrays objects*!/
+       for (var i = 0; i < json.length; i++) {
 
-          var positionMarkup = '<div class="position"><div class="inner"><h1>' + json[i].positionTitle + '</h1><span>' + json[i].team + '</span><p>' + json[i].description + '</p></div></div>';
+       var positionMarkup = '<div class="position"><div class="inner"><h1>' + json[i].positionTitle + '</h1><span>' + json[i].team + '</span><p>' + json[i].description + '</p></div></div>';
 
-          /*inject elements into filter container*/
+       /!*inject elements into filter container*!/
+       $('#jetsContent').append(positionMarkup);
+
+       /!*update the filter so it knows that elements have been added*!/
+       jet.update();
+
+       }
+       });*/
+
+
+
+      // Get a reference to the database service
+      var database = firebase.database();
+
+      /*reference the name of the firebase databse object. .once takes a snapshot of the data because we assume the data wont need to be updated in real time
+      * .then is the promise to do something once data is retrieved*/
+      database.ref('vacancies').once('value').then(function(snapshot){
+
+        console.log(snapshot.val());
+
+        $('.loading').css('display', 'none');
+
+
+        /*firebase for loop*/
+        snapshot.forEach(function(childSnapshot){
+
+          /*console.log(childSnapshot.val());*/
+
+          /*reference the values within the object*/
+          var obj = childSnapshot.val();
+
+          /*create the corresponding markup for each object*/
+          var positionMarkup = '<div class="position"><div class="inner"><h1>' + obj.positionTitle + '</h1><span>' + obj.team + '</span><p>' + obj.description + '</p></div></div>';
+
+          /*inject markup into jet filter*/
           $('#jetsContent').append(positionMarkup);
 
-          /*update the filter so it knows that elements have been added*/
+          /*update the jet filter so filtering works with new content*/
           jet.update();
 
-        }
+        });
+
       });
 
     }
@@ -232,5 +268,4 @@
   });
 
 })(jQuery, window, document);
-
 

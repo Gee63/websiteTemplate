@@ -1,62 +1,187 @@
-[
-  {
-    "positionTitle": "Frontend",
-    "description": "describe the job to me !",
-    "team": "Software"
-  },
-  {
-    "positionTitle": "Frontend",
-    "description": "describe the job to me !",
-    "team": "Software"
-  },
-  {
-    "positionTitle": "Backend",
-    "description": "describe the job to me !",
-    "team": "Software"
-  },
-  {
-    "positionTitle": "Backend",
-    "description": "describe the job to me !",
-    "team": "Software"
-  },
-  {
-    "positionTitle": "Designer",
-    "description": "describe the job to me !",
-    "team": "Creative"
-  },
-  {
-    "positionTitle": "Risk",
-    "description": "describe the job to me !",
-    "team": "Fraud"
-  },
-  {
-    "positionTitle": "manager",
-    "description": "describe the job to me !",
-    "team": "hr"
-  },
-  {
-    "positionTitle": "manager",
-    "description": "describe the job to me !",
-    "team": "hr"
-  },
-  {
-    "positionTitle": "Risk",
-    "description": "describe the job to me !",
-    "team": "Fraud"
-  },
-  {
-    "positionTitle": "Risk",
-    "description": "describe the job to me !",
-    "team": "Fraud"
-  },
-  {
-    "positionTitle": "seo manager",
-    "description": "describe the job to me !",
-    "team": "seo"
-  },
-  {
-    "positionTitle": "seo manager",
-    "description": "describe the job to me !",
-    "team": "seo"
-  }
-]
+{
+  "vacancies": [
+
+    {
+      "positionTitle": "Frontend",
+      "description": "describe the job to me !",
+      "team": "Software"
+    },
+    {
+      "positionTitle": "Frontend",
+      "description": "describe the job to me !",
+      "team": "Software"
+    },
+    {
+      "positionTitle": "Backend",
+      "description": "describe the job to me !",
+      "team": "Software"
+    },
+    {
+      "positionTitle": "Backend",
+      "description": "describe the job to me !",
+      "team": "Software"
+    },
+    {
+      "positionTitle": "Designer",
+      "description": "describe the job to me !",
+      "team": "Creative"
+    },
+    {
+      "positionTitle": "Risk",
+      "description": "describe the job to me !",
+      "team": "Fraud"
+    },
+    {
+      "positionTitle": "manager",
+      "description": "describe the job to me !",
+      "team": "hr"
+    },
+    {
+      "positionTitle": "manager",
+      "description": "describe the job to me !",
+      "team": "hr"
+    },
+    {
+      "positionTitle": "Risk",
+      "description": "describe the job to me !",
+      "team": "Fraud"
+    },
+    {
+      "positionTitle": "Risk",
+      "description": "describe the job to me !",
+      "team": "Fraud"
+    },
+    {
+      "positionTitle": "seo manager",
+      "description": "describe the job to me !",
+      "team": "seo"
+    },
+    {
+      "positionTitle": "seo manager",
+      "description": "describe the job to me !",
+      "team": "seo"
+    }
+
+    ],
+
+  "perks" : [
+    {
+      "perk": "perk1",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk2",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk3",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk4",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk5",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk6",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk7",
+      "description": "describe the value to me !"
+    },
+    {
+      "perk": "perk8",
+      "description": "describe the value to me !"
+    }
+  ],
+
+  "teams" : [
+    {
+      "description": "describe the team to me !",
+      "team": "Software"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Software"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Software"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Software"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Creative"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Fraud"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "hr"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "hr"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Fraud"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "Fraud"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "seo"
+    },
+    {
+      "description": "describe the team to me !",
+      "team": "seo"
+    }
+  ],
+
+  "values" : [
+    {
+      "value": "growth",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth1",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth2",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth3",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth4",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth5",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth6",
+      "description": "describe the value to me !"
+    },
+    {
+      "value": "growth7",
+      "description": "describe the value to me !"
+    }
+  ]
+}

@@ -21,12 +21,12 @@
 <body>
 
 <div class="header">
-  <a class="_logo" href="/">Osiris trading logo</a>
+  <a class="_logo" href="../index.html">Osiris trading logo</a>
 
 
-  <a href="/culture/">culture</a>
-  <a href="/careers/">careers</a>
-  <a href="/contact/">contact</a>
+  <a href="../culture/index.html">culture</a>
+  <a href="../careers/index.html">careers</a>
+  <a href="../contact/index.html">contact</a>
 </div>
 
 <div class="full-screen-container">
@@ -65,7 +65,11 @@
   </h1>
 
   <input type="search" id="jetsSearch">
-  <div id="jetsContent" class="positions-container"></div>
+  <div id="jetsContent" class="positions-container">
+
+    <div class="loading">...loading</div>
+
+  </div>
   <div class="view-all-jobs">view all</div>
 </div>
 
@@ -117,6 +121,22 @@
     <div class="popup-content"></div>
   </div>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2sAl7uqKzKXHwlxIetEPHzbvCgm3jNJY",
+    authDomain: "osiris-website.firebaseapp.com",
+    databaseURL: "https://osiris-website.firebaseio.com",
+    projectId: "osiris-website",
+    storageBucket: "osiris-website.appspot.com",
+    messagingSenderId: "97696951372"
+
+
+  };
+  firebase.initializeApp(config);
+</script>
 
 
 <script src="../assets/js/vendor/jquery-1.10.2.min.js"></script>

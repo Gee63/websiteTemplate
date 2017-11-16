@@ -181,20 +181,34 @@
 
     <div class="buttons-container">
       <div class="button">
-        <a href="/culture/"><span>Culture</span></a>
+        <a href="culture/index.html"><span>Culture</span></a>
       </div>
 
       <div class="button">
-        <a href="/careers/"><span>careers</span></a>
+        <a href="careers/index.html"><span>careers</span></a>
       </div>
 
       <div class="button">
-        <a href="/contact/"><span>contact us</span></a>
+        <a href="contact/index.html"><span>contact us</span></a>
       </div>
     </div>
 
   </div>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2sAl7uqKzKXHwlxIetEPHzbvCgm3jNJY",
+    authDomain: "osiris-website.firebaseapp.com",
+    databaseURL: "https://osiris-website.firebaseio.com",
+    projectId: "osiris-website",
+    storageBucket: "osiris-website.appspot.com",
+    messagingSenderId: "97696951372"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <script src="assets/js/vendor/jquery-1.10.2.min.js"></script>
 <!-- Compiled and minified JavaScript -->
